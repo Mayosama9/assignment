@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Frequency Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Word Frequency Analyzer</h1>
+        <div class="input-container">
+            <label for="url">Enter URL:</label>
+            <input type="text" id="url" placeholder="Enter URL" style="width: 300px;">
+            
+            <label for="topN">Number of top words (default 10):</label>
+            <input type="number" id="topN" placeholder="Enter number" style="width: 200px;">
+            
+            <button onclick="analyzeUrl()">Analyze</button>
+        </div>
+
+        <table id="resultsTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Frequency</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+        </table>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
